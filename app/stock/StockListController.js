@@ -1,9 +1,9 @@
 //"use strict";
 
-app.controller('StockListController', function ($scope, $http) {
-	$scope.stockList = [
+app.controller('StockListController', function($scope) {
+
+  $scope.stockList = [
 		{name:'Jani',country:'Norway'},
 		{name:'Hege',country:'Sweden'},
 		{name:'Kai',country:'Denmark'}];
-	$scope.a = "abc";
 });

@@ -1,6 +1,4 @@
-//"use strict";
-
-var app = angular.module('app', []);
+var app = angular.module('app', ['ngRoute']);
 
 app.config(function ($routeProvider) {
 
@@ -14,4 +12,3 @@ app.config(function ($routeProvider) {
     });
     $routeProvider.otherwise({ redirectTo: "/stock" });
 });
-
