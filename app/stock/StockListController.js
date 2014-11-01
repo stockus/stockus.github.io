@@ -5,4 +5,5 @@ app.controller('StockListController', function ($scope, $http) {
 		{name:'Jani',country:'Norway'},
 		{name:'Hege',country:'Sweden'},
 		{name:'Kai',country:'Denmark'}];
+	$scope.a = "abc";
 });
