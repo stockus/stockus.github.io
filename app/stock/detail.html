@@ -1,0 +1,19 @@
+<div>
+	<ul>
+		<li>Code: {{ stockData.code }}</li>
+		<li>Name: {{ stockData.name }}</li>
+		<li>Updated At: {{ stockData.updated_at }}</li>
+	</ul>
+	<table>
+		<tr>
+			<th ng-repeat="column in stockData.column_names track by $index">
+				{{ column }}
+			</th>		
+		</tr>
+		<tr ng-repeat="dataRow in stockData.data">
+			<td ng-repeat="data in dataRow track by $index">
+				{{ data }}
+			</td>
+		</tr>
+	</table>
+</div>

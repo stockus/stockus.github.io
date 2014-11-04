@@ -6,7 +6,7 @@ app.controller('StockListController', function($scope, $http) {
 	var startTime = new Date(new Date().setDate(new Date().getDate()-10));
 	var startDate = startTime.getFullYear() + "-" + (startTime.getMonth() + 1) + "-" + startTime.getDate();
 	var url = "https://www.quandl.com/api/v1/datasets/WIKI/";
-	var query = ".json?auth_token=EPRnixDWoq6Mnodjz8ip&trim_start="
+	var query = ".json?auth_token=EPRnixDWoq6Mnodjz8ip&trim_start=";
 
 	$scope.stockList = [];
 
