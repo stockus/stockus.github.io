@@ -8,12 +8,20 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-route.min.js"></script>
 		<script src="app/app.js"></script>
+		<script src="app/stock/StockSearchController.js"></script>
 		<script src="app/stock/StockListController.js"></script>
 		<script src="app/stock/StockDetailController.js"></script>
 	</head>
 	<body>
 		<div>
 			<h1><a href="#/stock">US Stock</a></h1>
+			<div  ng-controller="StockSearchController">
+				<form>
+				<input type="text" name="id" ng-model="stock.id" placeholder="Enter stock code..."/>
+				<button type="submit" ng-click="search(stock.id)">Search</button>
+			</form>	
+			</div>
+			<br/>
             <div ng-view>Loading...</div>
         </div>
 	</body>
